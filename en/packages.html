@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <title>TravelDream - Packages</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                        <img src="../assets/feature-1.png" alt="TravelDream Logo" style="height: 35px; margin-right: 8px;">
+                        <span>Travel<span>Dream</span></span>
+                    </a>
+                </div>
+                <button class="navbar-toggler nav__menu__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav__links" id="nav-links">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><div class="dropdown"><button type="button"class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                      Packages </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="europe.html">Europe</a></li>
+                        <li><a class="dropdown-item" href="summer-2025.html">Summer-2025</a></li>
+                        <li><a class="dropdown-item" href="winter-2025.html">Winter-2025</a></li>
+                      </ul></div></li>
+                    <li class="nav-item"><a class="nav-link" href="my-account.html">My Account</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-language-dark btn-sm" href="../sr/aranzmani.html">SR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="packages-hero" style="padding-top: 120px; padding-bottom: 60px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/header.jpg'); background-size: cover; background-position: center;">
+      <div class="section__container">
+        <h1 class="text-white text-center mb-4">Our Packages</h1>
+        <p class="text-white text-center lead">Find the perfect trip for you</p>
+      </div>
+    </section>
+
+    <section class="container py-4">
+      <div class="row g-3 mb-4">
+        <div class="col-md-4">
+          <input type="text" class="form-control" id="searchInput" placeholder="Search packages..." onkeyup="filterPackages()">
+        </div>
+        <div class="col-md-3">
+          <select class="form-select" id="sortSelect" onchange="sortPackages()">
+            <option value="name">Sort by name</option>
+            <option value="price-low">Price: lowest first</option>
+            <option value="price-high">Price: highest first</option>
+            <option value="rating">Rating: best first</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <select class="form-select" id="categoryFilter" onchange="filterPackages()">
+            <option value="all">All categories</option>
+            <option value="europe">Europe</option>
+            <option value="summer-2025">Summer 2025</option>
+            <option value="winter-2025">Winter 2025</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-4">
+      <div class="row mb-5">
+        <div class="col-md-4 mb-4">
+          <div class="card category-card h-100">
+            <img src="../assets/destination-1.jpg" class="card-img-top" alt="Europe" style="height: 200px; object-fit: cover;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Europe</h5>
+              <p class="card-text">Historic cities and culture</p>
+              <a href="europe.html" class="btn btn-primary">View Packages</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card category-card h-100">
+            <img src="../assets/destination-2.jpg" class="card-img-top" alt="Summer 2025" style="height: 200px; object-fit: cover;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Summer 2025</h5>
+              <p class="card-text">Sunny destinations and beaches</p>
+              <a href="summer-2025.html" class="btn btn-primary">View Packages</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card category-card h-100">
+            <img src="../assets/destination-3.jpg" class="card-img-top" alt="Winter 2025" style="height: 200px; object-fit: cover;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Winter 2025</h5>
+              <p class="card-text">Ski resorts and winter magic</p>
+              <a href="winter-2025.html" class="btn btn-primary">View Packages</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container package__container" id="all-packages">
+      <h2 class="section__header">All Packages</h2>
+      <p class="section__description">Complete selection of our trips</p>
+      <div class="package__grid" id="packagesGrid">
+        <div class="package__card" data-name="Prague - Golden City" data-price="320" data-rating="4.8" data-category="europe">
+          <img src="../assets/destination-1.jpg" alt="Prague" />
+          <div class="package__card__details">
+            <h4>Prague - Golden City</h4>
+            <p>Magical city of Charles IV with unforgettable views of the Vltava.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8 (234 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 4 days</li>
+                <li><i class="ri-map-pin-line"></i> Prague</li>
+                <li><i class="ri-hotel-line"></i> 4* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <a href="prague-golden-city.html" class="btn">Details</a>
+              <h3>€320</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card" data-name="Berlin - Living History" data-price="380" data-rating="4.7" data-category="europe">
+          <img src="../assets/destination-2.jpg" alt="Berlin" />
+          <div class="package__card__details">
+            <h4>Berlin - Living History</h4>
+            <p>German capital with rich history and modern spirit.</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-text">4.7 (189 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 5 days</li>
+                <li><i class="ri-map-pin-line"></i> Berlin</li>
+                <li><i class="ri-hotel-line"></i> 4* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <a href="berlin-history.html" class="btn">Details</a>
+              <h3>€380</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card" data-name="Budapest - Pearl of Danube" data-price="250" data-rating="4.7" data-category="europe">
+          <img src="../assets/destination-3.jpg" alt="Budapest" />
+          <div class="package__card__details">
+            <h4>Budapest - Pearl of Danube</h4>
+            <p>Thermal baths, Art Nouveau architecture and unforgettable nightlife.</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-text">4.7 (198 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 4 days</li>
+                <li><i class="ri-map-pin-line"></i> Budapest</li>
+                <li><i class="ri-hotel-line"></i> 4* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <a href="budapest-pearl.html" class="btn">Details</a>
+              <h3>€250</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card" data-name="Paris - City of Lights" data-price="450" data-rating="4.9" data-category="europe">
+          <img src="../assets/package-2.jpg" alt="Paris" />
+          <div class="package__card__details">
+            <h4>Paris - City of Lights</h4>
+            <p>Romantic city with unforgettable monuments and culture.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (312 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 5 days</li>
+                <li><i class="ri-map-pin-line"></i> Paris</li>
+                <li><i class="ri-hotel-line"></i> 5* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn" onclick="bookPackage('paris-lights', 450)">Book Now</button>
+              <h3>€450</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card" data-name="Greece - Dream Islands" data-price="580" data-rating="4.9" data-category="summer-2025">
+          <img src="../assets/package-1.jpg" alt="Greece" />
+          <div class="package__card__details">
+            <h4>Greece - Dream Islands</h4>
+            <p>Experience the magic of Santorini, Mykonos and Crete with crystal blue sea.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (342 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 7 days</li>
+                <li><i class="ri-map-pin-line"></i> Santorini, Mykonos, Crete</li>
+                <li><i class="ri-hotel-line"></i> 4* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <a href="greece-islands.html" class="btn">Details</a>
+              <h3>€580</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card" data-name="Turkey - Mediterranean Magic" data-price="420" data-rating="4.6" data-category="summer-2025">
+          <img src="../assets/package-3.jpg" alt="Turkey" />
+          <div class="package__card__details">
+            <h4>Turkey - Mediterranean Magic</h4>
+            <p>Historic cities, beautiful beaches and rich culture of Anatolia.</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-text">4.6 (267 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 8 days</li>
+                <li><i class="ri-map-pin-line"></i> Istanbul, Antalya, Cappadocia</li>
+                <li><i class="ri-hotel-line"></i> 4* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <a href="turkey-mediterranean.html" class="btn">Details</a>
+              <h3>€420</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card" data-name="Spain - Sunny Coast" data-price="380" data-rating="4.8" data-category="summer-2025">
+          <img src="../assets/discount.jpg" alt="Spain" />
+          <div class="package__card__details">
+            <h4>Spain - Sunny Coast</h4>
+            <p>Barcelona, Madrid and Costa del Sol - perfect combination of culture and sea.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8 (198 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 7 days</li>
+                <li><i class="ri-map-pin-line"></i> Barcelona, Madrid, Málaga</li>
+                <li><i class="ri-hotel-line"></i> 4* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn" onclick="bookPackage('spain-sunny-coast', 380)">Book Now</button>
+              <h3>€380</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card" data-name="Austria - Alpine Magic" data-price="520" data-rating="4.8" data-category="winter-2025">
+          <img src="../assets/client-1.jpg" alt="Austria" />
+          <div class="package__card__details">
+            <h4>Austria - Alpine Magic</h4>
+            <p>Skiing in the most prestigious alpine resorts.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8 (156 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 7 days</li>
+                <li><i class="ri-map-pin-line"></i> Innsbruck, Salzburg</li>
+                <li><i class="ri-hotel-line"></i> 4* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn" onclick="bookPackage('austria-alpine', 520)">Book Now</button>
+              <h3>€520</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card" data-name="Switzerland - Winter Paradise" data-price="680" data-rating="4.9" data-category="winter-2025">
+          <img src="../assets/client-2.jpg" alt="Switzerland" />
+          <div class="package__card__details">
+            <h4>Switzerland - Winter Paradise</h4>
+            <p>Luxury skiing with spectacular views of the Alps.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (89 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 6 days</li>
+                <li><i class="ri-map-pin-line"></i> Zermatt, St. Moritz</li>
+                <li><i class="ri-hotel-line"></i> 5* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn" onclick="bookPackage('switzerland-winter', 680)">Book Now</button>
+              <h3>€680</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="package__card" data-name="France - Alpine Charm" data-price="490" data-rating="4.7" data-category="winter-2025">
+          <img src="../assets/client-3.jpg" alt="French Alps" />
+          <div class="package__card__details">
+            <h4>France - Alpine Charm</h4>
+            <p>Chamonix and Val d'Isère - birthplace of alpine skiing.</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-text">4.7 (134 reviews)</span>
+            </div>
+            <div class="package-features">
+              <ul>
+                <li><i class="ri-calendar-line"></i> 6 days</li>
+                <li><i class="ri-map-pin-line"></i> Chamonix, Val d'Isère</li>
+                <li><i class="ri-hotel-line"></i> 4* hotel</li>
+              </ul>
+            </div>
+            <div>
+              <button class="btn" onclick="bookPackage('france-alpine', 490)">Book Now</button>
+              <h3>€490</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="index.html" class="logo">Travel<span>Dream</span></a>
+                </div>
+                <p>Explore the world's best destinations, enjoy unbeatable prices, and book your perfect getaway instantly.</p>
+            </div>
+            <div class="footer__col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2025, Iva Susa, Jovana Simic, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu. All rights reserved.
+        </div>
+    </footer>
+
+   
+  </body>
+</html>

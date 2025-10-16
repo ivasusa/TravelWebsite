@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <title>TravelDream - Galerija</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                        <img src="../assets/feature-1.png" alt="TravelDream Logo" style="height: 35px; margin-right: 8px;">
+                        <span>Travel<span>Dream</span></span>
+                    </a>
+                </div>
+                <button class="navbar-toggler nav__menu__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav__links" id="nav-links">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="galerija.html">Galerija</a></li>
+                    <li class="nav-item"><div class="dropdown"><button type="button"class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                      Aranžmani </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="evropa.html">Evropa</a></li>
+                        <li><a class="dropdown-item" href="leto-2025.html">Leto-2025</a></li>
+                        <li><a class="dropdown-item" href="zima-2025.html">Zima-2025</a></li>
+                      </ul></div></li>
+                    <li class="nav-item"><a class="nav-link" href="moj-nalog.html">Moj nalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="o-nama.html">O nama</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-language-dark btn-sm" href="../en/gallery.html">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="packages-hero" style="padding-top: 120px; padding-bottom: 60px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/header.jpg'); background-size: cover; background-position: center;">
+      <div class="section__container">
+        <h1 class="text-white text-center mb-4">Galerija</h1>
+        <p class="text-white text-center lead">Otkrijte naše neverovatne destinacije kroz video i slike</p>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary active" onclick="filterGallery('sve')">Sve</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterGallery('slike')">Slike</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterGallery('video')">Video</button>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-5" id="video-section">
+        <div class="col-12" id="video-title">
+          <h3 class="text-center mb-4">Video galerija</h3>
+        </div>
+        <div class="col-lg-6 gallery-item" data-category="video">
+          <div class="gallery-card video-card">
+            <div class="ratio ratio-16x9">
+              <div class="video-placeholder d-flex flex-column justify-content-center align-items-center text-center p-4" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-color-dark)); color: white; min-height: 300px;">
+                <i class="ri-play-circle-line mb-3" style="font-size: 3rem;"></i>
+                <h5 class="mb-3">Magija evropskih gradova</h5>
+                <p class="mb-4">Otkrijte najlepše evropske destinacije kroz naš video u galeriji</p>
+                <a href="https://www.youtube.com/watch?v=KBNHqI4kono" target="_blank" class="btn btn-light">
+                  <i class="ri-external-link-line me-2"></i>Pogledajte na YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 gallery-item" data-category="video">
+          <div class="gallery-card video-card">
+            <div class="ratio ratio-16x9">
+              <div class="video-placeholder d-flex flex-column justify-content-center align-items-center text-center p-4" style="background: linear-gradient(135deg, #4A90E2, #357ABD); color: white; min-height: 300px;">
+                <i class="ri-play-circle-line mb-3" style="font-size: 3rem;"></i>
+                <h5 class="mb-3">Grčka ostrva - Plavi raj</h5>
+                <p class="mb-4">Doživite nezaboravan odmor na grčkim ostrvima</p>
+                <a href="https://www.youtube.com/watch?v=w2jySvl4DeY" target="_blank" class="btn btn-light">
+                  <i class="ri-external-link-line me-2"></i>Pogledajte na YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4" id="images-section">
+        <div class="col-12" id="images-title">
+          <h3 class="text-center mb-4">Galerija slika</h3>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="slike">
+          <div class="gallery-image">
+            <img src="../assets/berlin1.jpg" alt="Prag" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="slike">
+          <div class="gallery-image">
+            <img src="../assets/spain2.jpg" alt="Berlin" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="slike">
+          <div class="gallery-image">
+            <img src="../assets/turkey3.jpg" alt="Budimpešta" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="slike">
+          <div class="gallery-image">
+            <img src="../assets/austria3.jpg" alt="Letnji odmor" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="slike">
+          <div class="gallery-image">
+            <img src="../assets/budapest3.jpg" alt="Zimski odmor" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="slike">
+          <div class="gallery-image">
+            <img src="../assets/greece3.jpg" alt="Evropska putovanja" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="slike">
+          <div class="gallery-image">
+            <img src="../assets/header.jpg" alt="Putovanja" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="slike">
+          <div class="gallery-image">
+            <img src="../assets/discount.jpg" alt="Popusti" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="index.html" class="logo">Travel<span>Dream</span></a>
+                </div>
+                <p>Otkrijte najbolje destinacije, uživajte u odličnim cenama i rezervišite savršen odmor odmah.</p>
+            </div>
+            <div class="footer__col">
+                <h4>BRZI LINKOVI</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="aranzmani.html">Aranžmani</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2025, Iva Susa, Jovana Simic, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu. Sva prava zadrzana.
+        </div>
+    </footer>
+  </body>
+</html>

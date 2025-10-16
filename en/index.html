@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>TravelDream - Travel Agency</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                        <img src="../assets/feature-1.png" alt="TravelDream Logo" style="height: 35px; margin-right: 8px;">
+                        <span>Travel<span>Dream</span></span>
+                    </a>
+                </div>
+                <button class="navbar-toggler nav__menu__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav__links" id="nav-links">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><div class="dropdown"><button type="button"class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                      Packages </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="europe.html">Europe</a></li>
+                        <li><a class="dropdown-item" href="summer-2025.html">Summer-2025</a></li>
+                        <li><a class="dropdown-item" href="winter-2025.html">Winter-2025</a></li>
+                      </ul></div></li>
+                    <li class="nav-item"><a class="nav-link" href="my-account.html">My Account</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-language-dark btn-sm" href="../sr/index.html">SR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <h1>TRAVELER<br /><span>FOR LIFE.</span></h1>
+        <p>Live your best moments</p>
+      </div>
+    </header>
+
+    <section class="section__container news__container" style="padding: 4rem 0;">
+      <h2 class="section__header">Agency News</h2>
+      <p class="section__description">Latest offers and packages starting soon</p>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card news__card">
+            <img src="../assets/prague1.jpg" class="card-img-top" alt="news">
+            <div class="card-body">
+              <h5 class="card-title">Prague - Special Winter Offer</h5>
+              <p class="card-text">Last spots for December 2025! Save 20% on 4-day stay in the golden city...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="prague-golden-city.html" class="btn btn-sm btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card news__card">
+            <img src="../assets/package-1.jpg" class="card-img-top" alt="news">
+            <div class="card-body">
+              <h5 class="card-title">Greece - Early Bird Summer 2025</h5>
+              <p class="card-text">Book by March 31st and get 15% discount on Santorini, Mykonos and Crete...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="greece-islands.html" class="btn btn-sm btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card news__card">
+            <img src="../assets/berlin1.jpg" class="card-img-top" alt="news">
+            <div class="card-body">
+              <h5 class="card-title">Berlin - New Group Starting Soon</h5>
+              <p class="card-text">Last seats for November! Historical tour through German capital...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="berlin-history-live.html" class="btn btn-sm btn-primary">Details</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+        <section class="section__container package__container" id="package">
+      <h2 class="section__header">Best Rated Packages</h2>
+      <p class="section__description">These three packages have the best reviews from our guests!</p>
+      <div class="package__grid">
+        <div class="package__card">
+          <img src="../assets/package-1.jpg" alt="package" />
+          <div class="package__card__details">
+            <h4>Greece - Dream Islands</h4>
+            <p>Experience the magic of Santorini, Mykonos and Crete with crystal blue sea.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (342 reviews)</span>
+            </div>
+            <div>
+              <a href="greece-islands.html" class="btn">View</a>
+              <h3>€580</h3>
+            </div>
+          </div>
+        </div>
+        <div class="package__card">
+          <img src="../assets/prague1.jpg" alt="package" />
+          <div class="package__card__details">
+            <h4>Prague - Golden City</h4>
+            <p>Magical city of Charles IV with unforgettable view of Vltava river.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8 (234 reviews)</span>
+            </div>
+            <div>
+              <a href="prague-golden-city.html" class="btn">View</a>
+              <h3>€320</h3>
+            </div>
+          </div>
+        </div>
+        <div class="package__card">
+          <img src="../assets/budapest1.jpg" alt="package" />
+          <div class="package__card__details">
+            <h4>Budapest - Danube Pearl</h4>
+            <p>Thermal baths, Art Nouveau architecture and unforgettable nightlife.</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-text">4.7 (198 reviews)</span>
+            </div>
+            <div>
+              <a href="budapest-danube-pearl.html" class="btn">View</a>
+              <h3>€250</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="section__header text-center">Our Team</h2>
+      <p class="section__description text-center">Meet our professional team that makes your journey unforgettable</p>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="../assets/client-2.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Team member" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Marija Petrović</h5>
+              <p class="text-muted">Agency Director</p>
+              <p class="card-text">With 20 years of experience in tourism, Marija leads our team towards excellence.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="../assets/client-1.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Team member" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Stefan Nikolić</h5>
+              <p class="text-muted">Destination Manager</p>
+              <p class="card-text">Stefan is our expert for exotic destinations and adventure tours.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="../assets/client-4.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Team member" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Ana Jovanović</h5>
+              <p class="text-muted">Client Manager</p>
+              <p class="card-text">Ana ensures that every client receives personalized service.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container" style="padding: 2rem 1rem;">
+      <h2 class="section__header">Our Partners</h2>
+      <p class="section__description">We work with leading companies in the tourism industry!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-2 col-4 mb-3">
+          <a href="https://www.booking.com" target="_blank" class="partner-link">
+            <div class="partner-banner p-3 text-center border rounded">
+              <i class="ri-hotel-line display-6 text-primary"></i>
+              <small class="d-block mt-2">Booking.com</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2 col-4 mb-3">
+          <a href="https://www.tripadvisor.com" target="_blank" class="partner-link">
+            <div class="partner-banner p-3 text-center border rounded">
+              <i class="ri-star-line display-6 text-success"></i>
+              <small class="d-block mt-2">TripAdvisor</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2 col-4 mb-3">
+          <a href="https://www.expedia.com" target="_blank" class="partner-link">
+            <div class="partner-banner p-3 text-center border rounded">
+              <i class="ri-earth-line display-6 text-warning"></i>
+              <small class="d-block mt-2">Expedia</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2 col-4 mb-3">
+          <a href="https://www.skyscanner.com" target="_blank" class="partner-link">
+            <div class="partner-banner p-3 text-center border rounded">
+              <i class="ri-flight-takeoff-line display-6 text-info"></i>
+              <small class="d-block mt-2">Skyscanner</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="index.html" class="logo">Travel<span>Dream</span></a>
+                </div>
+                <p>Explore the world's best destinations, enjoy unbeatable prices, and book your perfect getaway instantly.</p>
+            </div>
+            <div class="footer__col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2025, Iva Susa, Jovana Simic, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

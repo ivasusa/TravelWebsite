@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="sr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>TravelDream - Turistička agencija</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                        <img src="../assets/feature-1.png" alt="TravelDream Logo" style="height: 35px; margin-right: 8px;">
+                        <span>Travel<span>Dream</span></span>
+                    </a>
+                </div>
+                <button class="navbar-toggler nav__menu__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav__links" id="nav-links">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Početna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galerija.html">Galerija</a></li>
+                    <li class="nav-item"><div class="dropdown"><button type="button"class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                      Aranžmani </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="evropa.html">Evropa</a></li>
+                        <li><a class="dropdown-item" href="leto-2025.html">Leto-2025</a></li>
+                        <li><a class="dropdown-item" href="zima-2025.html">Zima-2025</a></li>
+                      </ul></div></li>
+                    <li class="nav-item"><a class="nav-link" href="moj-nalog.html">Moj nalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="o-nama.html">O nama</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-language-dark btn-sm" href="../en/index.html">EN</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="header" id="home">
+      <div class="section__container header__container">
+        <h1>PUTNIK<br /><span>ZA CEO ŽIVOT.</span></h1>
+        <p>Doživite svoje najbolje trenutke</p>
+      </div>
+    </header>
+
+    <section class="section__container news__container" style="padding: 4rem 0;">
+      <h2 class="section__header">Novosti agencije</h2>
+      <p class="section__description">Najnovije ponude i aranžmani koji uskoro počinju</p>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card news__card">
+            <img src="../assets/prague1.jpg" class="card-img-top" alt="novost">
+            <div class="card-body">
+              <h5 class="card-title">Prag - Specijalna zimska ponuda</h5>
+              <p class="card-text">Poslednja mesta za decembar 2025! Uštedite 20% na 4-dnevni boravak u...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <a href="prag-zlati-grad.html" class="btn btn-sm btn-primary">Detalji</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card news__card">
+            <img src="../assets/package-1.jpg" class="card-img-top" alt="novost">
+            <div class="card-body">
+              <h5 class="card-title">Grčka - Early Bird leto 2025</h5>
+              <p class="card-text mb-4">Rezervišite do 31. marta i ostvarite 15% popusta na Santorini, Mikonos i Kretu...&nbsp;</p>
+              <div class="d-flex justify-content-between align-items-center mb-0 mt-4">
+                <a href="grcka-ostrva.html" class="btn btn-sm btn-primary mb-0">Detalji</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card news__card">
+            <img src="../assets/berlin1.jpg" class="card-img-top" alt="novost">
+            <div class="card-body">
+              <h5 class="card-title">Berlin - Nova grupa uskoro</h5>
+              <p class="card-text mb-4">Poslednja mesta za novembar! Istorijski obilazak nemačke prestonice...</p>
+              <div class="d-flex justify-content-between align-items-center mb-0 mt-4">
+                <a href="berlin-istorija.html" class="btn btn-sm btn-primary mb-0">Detalji</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    <section class="section__container package__container" id="package">
+      <h2 class="section__header">Najbolje ocenjeni aranžmani</h2>
+      <p class="section__description">Ova tri aranžmana imaju najbolje ocene naših gostiju!</p>
+      <div class="package__grid">
+        <div class="package__card">
+          <img src="../assets/package-1.jpg" alt="aranžman" />
+          <div class="package__card__details">
+            <h4>Grčka - Ostrva iz snova</h4>
+            <p>Doživite magiju Santorinija, Mikonosa i Krete uz kristalno plavo more.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.9 (342 recenzije)</span>
+            </div>
+            <div>
+              <a href="grcka-ostrva.html" class="btn">Prikaži</a>
+              <h3>€580</h3>
+            </div>
+          </div>
+        </div>
+        <div class="package__card">
+          <img src="../assets/prague1.jpg" alt="aranžman" />
+          <div class="package__card__details">
+            <h4>Prag - Zlatni grad</h4>
+            <p>Magijski grad Karla IV sa nezaboravnim pogledom na reku Vltavu.</p>
+            <div class="rating">
+              <span class="stars">★★★★★</span>
+              <span class="rating-text">4.8 (234 recenzije)</span>
+            </div>
+            <div>
+              <a href="prag-zlati-grad.html" class="btn">Prikaži</a>
+              <h3>€320</h3>
+            </div>
+          </div>
+        </div>
+        <div class="package__card">
+          <img src="../assets/budapest1.jpg" alt="aranžman" />
+          <div class="package__card__details">
+            <h4>Budimpešta - Biser Dunava</h4>
+            <p>Termalne banje, Art Nouveau arhitektura i nezaboravan noćni život.</p>
+            <div class="rating">
+              <span class="stars">★★★★☆</span>
+              <span class="rating-text">4.7 (198 recenzija)</span>
+            </div>
+            <div>
+              <a href="budimpesta-biser.html" class="btn">Prikaži</a>
+              <h3>€250</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="section__header text-center">Naš tim</h2>
+      <p class="section__description text-center">Upoznajte naš profesionalni tim koji čini vaše putovanje nezaboravnim</p>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="../assets/client-2.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Član tima" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Marija Petrović</h5>
+              <p class="text-muted">Direktor agencije</p>
+              <p class="card-text">Sa 20 godina iskustva u turizmu, Marija vodi naš tim ka izvrsnosti.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="../assets/client-1.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Član tima" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Stefan Nikolić</h5>
+              <p class="text-muted">Menadžer destinacija</p>
+              <p class="card-text">Stefan je naš stručnjak za egzotične destinacije i avanturističke ture.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-4">
+          <div class="card text-center">
+            <img src="../assets/client-4.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Član tima" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">Ana Jovanović</h5>
+              <p class="text-muted">Menadžer klijenata</p>
+              <p class="card-text">Ana vodi računa da svaki klijent dobije personalizovanu uslugu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container" style="padding: 2rem 1rem;">
+      <h2 class="section__header">Naši partneri</h2>
+      <p class="section__description">Sarađujemo sa vodećim kompanijama u industriji turizma!</p>
+      <div class="row justify-content-center">
+        <div class="col-md-2 col-4 mb-3">
+          <a href="https://www.booking.com" target="_blank" class="partner-link">
+            <div class="partner-banner p-3 text-center border rounded">
+              <i class="ri-hotel-line display-6 text-primary"></i>
+              <small class="d-block mt-2">Booking.com</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2 col-4 mb-3">
+          <a href="https://www.tripadvisor.com" target="_blank" class="partner-link">
+            <div class="partner-banner p-3 text-center border rounded">
+              <i class="ri-star-line display-6 text-success"></i>
+              <small class="d-block mt-2">TripAdvisor</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2 col-4 mb-3">
+          <a href="https://www.expedia.com" target="_blank" class="partner-link">
+            <div class="partner-banner p-3 text-center border rounded">
+              <i class="ri-earth-line display-6 text-warning"></i>
+              <small class="d-block mt-2">Expedia</small>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-2 col-4 mb-3">
+          <a href="https://www.skyscanner.com" target="_blank" class="partner-link">
+            <div class="partner-banner p-3 text-center border rounded">
+              <i class="ri-flight-takeoff-line display-6 text-info"></i>
+              <small class="d-block mt-2">Skyscanner</small>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="index.html" class="logo">Travel<span>Dream</span></a>
+                </div>
+                <p>Otkrijte najbolje destinacije, uživajte u najboljim cenama i rezervišite savršen odmor odmah.</p>
+            </div>
+            <div class="footer__col">
+                <h4>BRZI LINKOVI</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="o-nama.html">O nama</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="aranzmani.html">Aranžmani</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2025, Iva Susa, Jovana Simic, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu. Sva prava zadrzana.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

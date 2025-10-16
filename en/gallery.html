@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <title>TravelDream - Gallery</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container">
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="index.html" class="logo" style="display: flex; align-items: center;">
+                        <img src="../assets/feature-1.png" alt="TravelDream Logo" style="height: 35px; margin-right: 8px;">
+                        <span>Travel<span>Dream</span></span>
+                    </a>
+                </div>
+                <button class="navbar-toggler nav__menu__btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav__links" id="nav-links">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><div class="dropdown"><button type="button"class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                      Packages </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="europe.html">Europe</a></li>
+                        <li><a class="dropdown-item" href="summer-2025.html">Summer-2025</a></li>
+                        <li><a class="dropdown-item" href="winter-2025.html">Winter-2025</a></li>
+                      </ul></div></li>
+                    <li class="nav-item"><a class="nav-link" href="my-account.html">My Account</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-language-dark btn-sm" href="../sr/galerija.html">SR</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="packages-hero" style="padding-top: 120px; padding-bottom: 60px; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/header.jpg'); background-size: cover; background-position: center;">
+      <div class="section__container">
+        <h1 class="text-white text-center mb-4">Gallery</h1>
+        <p class="text-white text-center lead">Discover our amazing destinations through videos and images</p>
+      </div>
+    </section>
+
+    <section class="container py-5">
+      <div class="text-center mb-5">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-primary active" onclick="filterGallery('all')">All</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterGallery('images')">Images</button>
+          <button type="button" class="btn btn-outline-primary" onclick="filterGallery('video')">Video</button>
+        </div>
+      </div>
+
+      <div class="row g-4 mb-5" id="video-section">
+        <div class="col-12" id="video-title">
+          <h3 class="text-center mb-4">Video Gallery</h3>
+        </div>
+        <div class="col-lg-6 gallery-item" data-category="video">
+          <div class="gallery-card video-card">
+            <div class="ratio ratio-16x9">
+              <div class="video-placeholder d-flex flex-column justify-content-center align-items-center text-center p-4" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-color-dark)); color: white; min-height: 300px;">
+                <i class="ri-play-circle-line mb-3" style="font-size: 3rem;"></i>
+                <h5 class="mb-3">Magic of European Cities</h5>
+                <p class="mb-4">Discover the most beautiful European destinations through our video in gallery</p>
+                <a href="https://www.youtube.com/watch?v=KBNHqI4kono" target="_blank" class="btn btn-light">
+                  <i class="ri-external-link-line me-2"></i>Watch on YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 gallery-item" data-category="video">
+          <div class="gallery-card video-card">
+            <div class="ratio ratio-16x9">
+              <div class="video-placeholder d-flex flex-column justify-content-center align-items-center text-center p-4" style="background: linear-gradient(135deg, #4A90E2, #357ABD); color: white; min-height: 300px;">
+                <i class="ri-play-circle-line mb-3" style="font-size: 3rem;"></i>
+                <h5 class="mb-3">Greek Islands - Blue Paradise</h5>
+                <p class="mb-4">Experience unforgettable vacation on Greek islands</p>
+                <a href="https://www.youtube.com/watch?v=w2jySvl4DeY" target="_blank" class="btn btn-light">
+                  <i class="ri-external-link-line me-2"></i>Watch on YouTube
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row g-4" id="images-section">
+        <div class="col-12" id="images-title">
+          <h3 class="text-center mb-4">Image Gallery</h3>
+        </div>
+        
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="images">
+          <div class="gallery-image">
+            <img src="../assets/berlin1.jpg" alt="Prague" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="images">
+          <div class="gallery-image">
+            <img src="../assets/spain2.jpg" alt="Berlin" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="images">
+          <div class="gallery-image">
+            <img src="../assets/turkey3.jpg" alt="Budapest" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="images">
+          <div class="gallery-image">
+            <img src="../assets/austria3.jpg" alt="Summer vacation" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="images">
+          <div class="gallery-image">
+            <img src="../assets/budapest3.jpg" alt="Winter vacation" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="images">
+          <div class="gallery-image">
+            <img src="../assets/greece3.jpg" alt="European travels" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="images">
+          <div class="gallery-image">
+            <img src="../assets/header.jpg" alt="Travel" class="img-fluid rounded shadow">
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="images">
+          <div class="gallery-image">
+            <img src="../assets/discount.jpg" alt="Discounts" class="img-fluid rounded shadow">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <a href="index.html" class="logo">Travel<span>Dream</span></a>
+                </div>
+                <p>Explore the world's best destinations, enjoy unbeatable prices, and book your perfect getaway instantly.</p>
+            </div>
+            <div class="footer__col">
+                <h4>QUICK LINKS</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="packages.html">Packages</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2025, Iva Susa, Jovana Simic, Odsek za softversko inzenjerstvo Elektrotehnickog fakulteta Univerziteta u Beogradu. All rights reserved.
+        </div>
+    </footer>
+
+    
+
+  </body>
+</html>
