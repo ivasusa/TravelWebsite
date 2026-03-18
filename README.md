@@ -1,10 +1,10 @@
-# 🌍 Travel Platform Website
+# Travel Platform Website
 
 **Travel Platform Website** is a responsive web application for a travel agency that allows visitors to **browse and reserve travel packages**, view galleries, and manage their accounts. The website is designed to be user-friendly, attractive, and accessible on desktop, tablet, and mobile devices.
 
 ---
 
-## **✨ Features**
+## **Features**
 - **Responsive web design** using HTML5, CSS3, JavaScript, and Bootstrap  
 - **Uniform layout** with templates for headers, footers, and navigation  
 - **Dynamic navigation menus** (horizontal and vertical)  
@@ -17,7 +17,7 @@
 
 ---
 
-## **📂 Pages & Structure**
+## **Pages & Structure**
 The website includes:  
 - **Home Page**: highlights agency news and top-rated packages  
 - **Gallery**: image and video galleries  
@@ -29,7 +29,7 @@ The **main menu** is accessible on all pages and links to all major sections. Su
 
 ---
 
-## **💻 Technologies Used**
+## **Technologies Used**
 - **HTML5 & CSS3** for structure and styling  
 - **JavaScript** for interactivity and dynamic content  
 - **Bootstrap** for responsive layout and components  
