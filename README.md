@@ -1,12 +1,10 @@
-# Travel Platform Website
+# Travel Dream Website
 
-**Travel Platform Website** is a responsive web application for a travel agency that allows visitors to **browse and reserve travel packages**, view galleries, and manage their accounts. The website is designed to be user-friendly, attractive, and accessible on desktop, tablet, and mobile devices.
+**Travel Dream Website** is a responsive web application for a travel agency that allows visitors to **browse and reserve travel packages**, view galleries, and manage their accounts. The website is designed to be user-friendly, attractive, and accessible on desktop, tablet, and mobile devices.
 
 ---
 
 ## **Features**
-- **Responsive web design** using HTML5, CSS3, JavaScript, and Bootstrap  
-- **Uniform layout** with templates for headers, footers, and navigation  
 - **Dynamic navigation menus** (horizontal and vertical)  
 - **Multilingual support**: Serbian and English  
 - **User account management**: view, reserve, and cancel travel packages  
